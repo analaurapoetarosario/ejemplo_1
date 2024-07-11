@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Trabajando con Formularios</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<h1>Formulario de Inscripción</h1>
+	
+	<form class="form">
+		<div>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre">
+		</div>
+
+		<div>
+			<label for="apellido">Apellido:</label>
+			<input type="text" id="apellido" name="apellido" value="">
+		</div>
+
+		<div>
+			<label for="genero">Genero</label>
+			<input type="radio" name="genero" value="Mujer"> Mujer
+			<input type="radio" name="genero" value="hombre"> Hombre
+			<input type="radio" name="genero" value="otro"> Otro
+		</div>
+
+		<div>
+			<label for="curso">Cursos:</label>
+			
+			<select name="cursos" id="cursos">
+				<option value="" selected>Elegir un curso...</option>
+				<option value="OPC">Curso de operador de PC</option>
+				<option value="IPR">Curso de Introducción a Programación</option>
+				<option value="Arduino">Curso de Arduino</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="conexion">Conexión:</label>
+			<input type="checkbox" name="pc" id="conexion" value="pc"> Computadora
+			<input type="checkbox" name="tablet" value="tablet"> Tablet
+			<input type="checkbox" name="smartphone" value="smartphone"> Smartphone
+		</div>
+
+		<div>
+			<label for="comentario">Dejanos un comentario:</label> <br>
+			<textarea name="comentario" id="coemntario" cols="20" rows="5"></textarea>
+		</div>
+
+		<div>
+			<label for="correo">Correo:</label>
+			<input type="text" id="correo" name="correo" value="" placeholder="correo@ejemplo.com">
+		</div>
+
+		<div>
+			<label for="contrasena">Contraseña:</label>
+			<input type="password" id="contrasena" name="contrasena" value="">
+		</div>
+
+		<div>
+			<input type="submit" name="enviar" value="Enviar">
+			<input type="reset" name="cancelar" value="Cancelar">
+		</div>
+
+	</form>
+</body>
+</html>
